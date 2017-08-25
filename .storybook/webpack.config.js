@@ -23,7 +23,7 @@ module.exports = {
             options: {
               data: '@import "paragon-reset";',
               includePaths: [
-                path.join(__dirname, '../src/utils'),
+                path.join(__dirname, '../packages/utils'),
               ],
               sourceMap: true,
             },
