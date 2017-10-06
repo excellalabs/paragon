@@ -5,16 +5,19 @@ Provides a button component that can be customized and handle multiple event han
 ## API
 
 ### `buttonType` (string; optional)
-`buttonType` is used to determine the type of button to be rendered.  See [Bootstrap's buttons documentation](https://getbootstrap.com/docs/4.0/components/buttons/) for a list of applicable button types. For example, `buttonType="light"`. Defaults to `undefined`.
+`buttonType` is used to determine the type of button to be rendered.  See [Bootstrap's buttons documentation](https://getbootstrap.com/docs/4.0/components/buttons/) for a list of applicable button types. For example, `buttonType="light"`. The default is `undefined`.
 
 ### `className` (string array; optional)
-`className` specifies Bootstrap class names to apply to the table. See [Bootstrap's buttons documentation](https://getbootstrap.com/docs/4.0/components/buttons/) for a list of applicable class names. The default is an empty array.
+`className` specifies Bootstrap class names to apply to the button. See [Bootstrap's buttons documentation](https://getbootstrap.com/docs/4.0/components/buttons/) for a list of applicable class names. The default is an empty array.
 
 ### `display` (string; required)
 `display` specifies the text that is displayed within the button.
 
 ### `inputRef` (function; optional)
 `inputRef` is a function that defines a reference for the button. An example `inputRef` from the calling component could look something like: `inputRef={(input) => { this.button = input; }}`. The default is an empty function.
+
+### `isClose` (boolean; optional)
+`isClose` is used to determine if the button is a "Close" style button to leverage bootstrap styling. Example use case is with the Status Alert [dismiss button](https://getbootstrap.com/docs/4.0/components/alerts/#dismissing). The default is false.
 
 ### `onBlur` (function; optional)
 `onBlur` is a function that would specify what the button should do when the `onBlur` event is triggered. For example, the button could change in color or `buttonType` when focus is changed. The default is an empty function.
